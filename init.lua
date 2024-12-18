@@ -1,5 +1,6 @@
 vim.cmd([[language en_US]])
 
+require('filetypes')
 require('options')
 require('keymaps')
 
@@ -22,18 +23,6 @@ require('lazy').setup("plugins", {
 		enabled = true,
 		notify = false
 	}
-})
-
-vim.filetype.add({
-    extension = {
-        ['txt'] = 'don'
-    }
-})
-
-vim.filetype.add({
-    filename = {
-        ['construct.txt'] = 'construct'
-    }
 })
 
 -- always insert mode in terminal
