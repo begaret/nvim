@@ -1,5 +1,17 @@
 return {
 	{
+		'williamboman/mason.nvim',
+		config = function()
+			require('mason').setup()
+		end
+	},
+	{
+		'williamboman/mason-lspconfig.nvim',
+		config = function()
+			require('mason-lspconfig').setup()
+		end
+	},
+	{
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',
 		lazy = true,
