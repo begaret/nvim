@@ -2,8 +2,10 @@ return {
 	-- 'ellisonleao/gruvbox.nvim',
     -- 'rebelot/kanagawa.nvim',
     -- 'projekt0n/github-nvim-theme',
-    -- 'Mofiqul/vscode.nvim',
-	'sainnhe/everforest',
+	-- 'Mofiqul/vscode.nvim',
+	-- 'sainnhe/everforest',
+	-- 'lunacookies/vim-colors-xcode',
+	'begaret/gh',
     lazy = false,
 	priority = 1000,
 	config = function()
@@ -24,10 +26,10 @@ return {
         --         light = 'lotus'
         --    }
         -- })
-        -- 
-        -- vim.cmd([[colorscheme kanagawa]])
+
+		-- vim.cmd([[colorscheme kanagawa]])
         -- vim.o.background = 'dark'
-        
+
         --[[ github dark ]]
         -- require('github-theme').setup({
         --     options = {
@@ -36,13 +38,20 @@ return {
         -- })
         --
         -- vim.cmd([[colorscheme github_dark_default]])
-		
+
 		--[[ everforest ]]
 		-- vim.g.everforest_enable_italic = true
-		vim.g.everforest_background = 'hard'
-		vim.cmd.colorscheme('everforest')
-		vim.o.background = 'dark'
-        
+		-- vim.g.everforest_background = 'hard'
+		-- vim.cmd.colorscheme('everforest')
+		-- vim.o.background = 'dark'
+
+		--[[ xcode ]]
+		-- vim.cmd([[colorscheme xcodedarkhc]])
+		-- vim.o.background = 'dark'
+
+		--[[ gh ]]
+		vim.cmd([[colorscheme gh]])
+
         --[[ vscode ]]
         -- vim.cmd([[colorscheme vscode]])
         -- vim.o.background = 'dark'
